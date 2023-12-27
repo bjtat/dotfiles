@@ -109,7 +109,7 @@ vim.keymap.set('n', '<leader>/', function()
   })
 end, { desc = '[/] Fuzzily search in current buffer' })
 
-vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
+-- vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
@@ -120,7 +120,6 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 
 vim.keymap.set('n', '<leader>sk', require('telescope.builtin').keymaps, { desc = '[S]earch [K]eymaps' })
 vim.keymap.set('n', '<leader><leader>', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
-vim.keymap.set('n', '<C-P>', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', '<leader>?', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root', silent = true })
 
 -- Neotree keymaps
@@ -138,4 +137,3 @@ vim.keymap.set("n", "<leader>]", "<cmd>:GoDef<cr>", { desc = "GPV vim-go GoDef" 
 vim.keymap.set("n", "<leader>[", "<cmd>:GoDefPop<cr>", { desc = "GPV vim-go GoDefPop" })
 vim.keymap.set("n", "<leader>gr", "<cmd>GoRename<cr>", { desc = "GPV vim-go rename" })
 vim.keymap.set("n", "<leader>gt", "<cmd>GoAlt<cr>", { desc = "GPV vim-go goto test" })
--- vim.keymap.set("n", "<leader>gw", "<cmd>Telescope grep_string<cr>", { desc = "GPV grep current string" })
