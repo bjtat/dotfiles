@@ -16,19 +16,13 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   { 'tpope/vim-sleuth' },
 
-  { 'folke/which-key.nvim',  opts = {} },
+  { 'folke/which-key.nvim', opts = {} },
 
   { 'numToStr/Comment.nvim', opts = {} },
 
   { 'ojroques/nvim-osc52' },
 
   { 'fatih/vim-go' },
-
-  {
-    'm4xshen/hardtime.nvim',
-    dependencies = { 'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim' },
-    opts = {},
-  },
 
   {
     'nvim-neo-tree/neo-tree.nvim',

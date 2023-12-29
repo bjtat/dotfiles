@@ -4,6 +4,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.o.tabstop = 2
+vim.o.shiftwidth = 2
 
 -- Don't show mode since we have a statusline
 vim.o.showmode = false
