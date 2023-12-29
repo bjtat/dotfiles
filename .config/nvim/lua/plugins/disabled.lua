@@ -8,7 +8,7 @@ return {
   -- { "echasnovski/mini.bufremove", enabled = false, keys = disable_keys },
   -- { "folke/trouble.nvim", enabled = false, keys = disable_keys },
   -- { "rafamadriz/friendly-snippets", enabled = false, keys = disable_keys },
-  { "JoosepAlviste/nvim-ts-context-commentstring", enabled = false, keys = disable_keys },
+  -- { "JoosepAlviste/nvim-ts-context-commentstring", enabled = false, keys = disable_keys },
   { "echasnovski/mini.ai", enabled = false, keys = disable_keys },
   { "echasnovski/mini.indentscope", enabled = false, keys = disable_keys },
   { "echasnovski/mini.pairs", enabled = false, keys = disable_keys },
