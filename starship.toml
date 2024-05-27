@@ -1,4 +1,6 @@
 command_timeout = 1000
+
+
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
 disabled = true
@@ -129,6 +131,7 @@ format = '\[[$symbol]($style)\]'
 
 [package]
 format = '\[[$symbol$version]($style)\]'
+disabled = true
 
 [perl]
 format = '\[[$symbol($version)]($style)\]'
