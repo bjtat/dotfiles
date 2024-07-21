@@ -2,7 +2,7 @@
 # TERM = "xterm-256-color"
 
 [font]
-size = 20
+size = 22
 
 [font.normal]
 # family = "FiraCode Nerd Font"
