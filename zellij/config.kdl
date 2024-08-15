@@ -50,6 +50,7 @@ keybinds clear-defaults=true {
     unbind "Ctrl h"
     unbind "Ctrl n"
     unbind "Ctrl q"
+    unbind "Ctrl o"
     tab {
         bind "Ctrl t" { SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
@@ -113,18 +114,18 @@ keybinds clear-defaults=true {
         bind "Ctrl c" { SwitchToMode "Normal"; }
         bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
     }
-    session {
-        bind "Ctrl o" { SwitchToMode "Normal"; }
-        bind "Ctrl s" { SwitchToMode "Scroll"; }
-        bind "d" { Detach; }
-        bind "w" {
-            LaunchOrFocusPlugin "session-manager" {
-                floating true
-                move_to_focused_tab true
-            };
-            SwitchToMode "Normal"
-        }
-    }
+    //session {
+    //    bind "Ctrl o" { SwitchToMode "Normal"; }
+    //    bind "Ctrl s" { SwitchToMode "Scroll"; }
+    //    bind "d" { Detach; }
+    //    bind "w" {
+    //        LaunchOrFocusPlugin "session-manager" {
+    //            floating true
+    //            move_to_focused_tab true
+    //        };
+    //        SwitchToMode "Normal"
+    //    }
+    //}
     tmux {
         bind "[" { SwitchToMode "Scroll"; }
         bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
@@ -175,9 +176,9 @@ keybinds clear-defaults=true {
     shared_except "scroll" "locked" {
         bind "Ctrl s" { SwitchToMode "Scroll"; }
     }
-    shared_except "session" "locked" {
-        bind "Ctrl o" { SwitchToMode "Session"; }
-    }
+    //shared_except "session" "locked" {
+    //    bind "Ctrl o" { SwitchToMode "Session"; }
+    //}
     shared_except "tab" "locked" {
         bind "Ctrl t" { SwitchToMode "Tab"; }
     }
