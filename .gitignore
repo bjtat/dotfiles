@@ -18,3 +18,5 @@ user-dirs.dirs
 user-dirs.locale
 update-notifier/
 nautilus/
+*-backup*
+google-chrome
