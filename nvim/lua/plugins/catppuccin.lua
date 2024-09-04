@@ -1,13 +1,23 @@
 return {
+  {
     "catppuccin/nvim",
     lazy = false,
     name = "catppuccin",
-    priority = 1000,
+    -- you can do it like this with a config function
     config = function()
-        require("catppuccin").setup({
-            transparent_background = true,
-        })
-        vim.cmd.colorscheme "catppuccin"
-    end
+      require("catppuccin").setup({
+        -- configurations
+      })
+    end,
+    -- or just use opts table
+    opts = {
+      -- configurations
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin-mocha",
+    },
+  },
 }
-
