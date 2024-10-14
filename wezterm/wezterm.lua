@@ -14,7 +14,7 @@ config.command_palette_font_size = 18.0
 
 -- Terminal rendering
 config.freetype_load_flags = "NO_HINTING"
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 
 config.window_padding = {
 	left = 2,
@@ -32,8 +32,8 @@ config.use_fancy_tab_bar = false
 config.keys = {
 	{ key = "m", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
 	{ key = "h", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
-	{ key = "LeftArrow", mods = "CMD|OPT", action = wezterm.action.ActivateTabRelative(-1) },
-	{ key = "RightArrow", mods = "CMD|OPT", action = wezterm.action.ActivateTabRelative(1) },
+	{ key = "LeftArrow", mods = "CTRL|CMD", action = wezterm.action.ActivateTabRelative(-1) },
+	{ key = "RightArrow", mods = "CTRL|CMD", action = wezterm.action.ActivateTabRelative(1) },
 	{ key = "o", mods = "CTRL|SHIFT", action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|TABS" }) },
 	{
 		key = "i",
