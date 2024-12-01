@@ -5,3 +5,4 @@
 vim.wo.relativenumber = false
 vim.wo.wrap = false
 vim.wo.conceallevel = 0
+vim.opt.laststatus = 3
