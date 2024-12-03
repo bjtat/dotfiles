@@ -1,0 +1,17 @@
+setopt histignorealldups sharehistory
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.zsh_history
+
+# Use modern completion system
+autoload -Uz compinit
+compinit
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/home/bjtat/.local/bin"
+export PATH="$PATH:/usr/local/go/bin"
+
+eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java"
