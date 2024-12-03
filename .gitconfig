@@ -1,0 +1,16 @@
+[user]
+	email = <EMAIL_HERE>
+	name = <NAME_HERE>
+[core]
+	editor = nvim
+[alias]
+  br = branch
+  ci = commit -v
+  co = checkout
+  sw = switch
+  di = diff
+  ds = diff --staged
+  llog = log --date=local
+  lol = log --graph --decorate --oneline
+  pushfwl = push --force-with-lease
+  st = status
