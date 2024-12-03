@@ -35,6 +35,7 @@ config.keys = {
 	{ key = "LeftArrow", mods = "CTRL|CMD", action = wezterm.action.ActivateTabRelative(-1) },
 	{ key = "RightArrow", mods = "CTRL|CMD", action = wezterm.action.ActivateTabRelative(1) },
 	{ key = "o", mods = "CTRL|SHIFT", action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|TABS" }) },
+	{ key = "n", mods = "CTRL|SHIFT", action = wezterm.action.ToggleFullScreen },
 	{
 		key = "i",
 		mods = "CTRL|SHIFT",
