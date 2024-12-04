@@ -8,13 +8,13 @@ config.color_scheme = "catppuccin-macchiato"
 
 -- Font
 config.font = wezterm.font("Hack Nerd Font")
-config.font_size = 18.0
+config.font_size = 22.0
 config.line_height = 1
-config.command_palette_font_size = 18.0
+config.command_palette_font_size = 22.0
 
 -- Terminal rendering
-config.freetype_load_flags = "NO_HINTING"
-config.window_decorations = "TITLE | RESIZE"
+-- config.freetype_load_flags = "NO_HINTING"
+config.window_decorations = "RESIZE"
 
 config.window_padding = {
 	left = 2,
