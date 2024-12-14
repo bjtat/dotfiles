@@ -1,0 +1,25 @@
+# oh-my-zsh setup, not the biggest fan but that's ok
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
+# Use modern completion system
+autoload -Uz compinit && compinit
+
+# everything below is my own
+setopt histignorealldups sharehistory
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.zsh_history
+
+# neovim > vim
+export EDITOR='nvim'
+
+# spinning up starship, zoxide, and fzf on shell start
+eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+source <(fzf --zsh)
+
+# for binary access in bin
+export PATH="$PATH:/Users/bjtat/.local/bin"
+
+alias lg='lazygit'
