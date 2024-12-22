@@ -32,13 +32,13 @@ config.use_fancy_tab_bar = false
 config.keys = {
 	{ key = "m", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
 	{ key = "h", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
-	{ key = "LeftArrow", mods = "CTRL|CMD", action = wezterm.action.ActivateTabRelative(-1) },
-	{ key = "RightArrow", mods = "CTRL|CMD", action = wezterm.action.ActivateTabRelative(1) },
-	{ key = "o", mods = "CTRL|SHIFT", action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|TABS" }) },
+	{ key = "LeftArrow", mods = "OPT|CMD", action = wezterm.action.ActivateTabRelative(-1) },
+	{ key = "RightArrow", mods = "OPT|CMD", action = wezterm.action.ActivateTabRelative(1) },
+	{ key = "o", mods = "OPT|CMD", action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|TABS" }) },
 	{ key = "n", mods = "CTRL|SHIFT", action = wezterm.action.ToggleFullScreen },
 	{
 		key = "i",
-		mods = "CTRL|SHIFT",
+		mods = "OPT|CMD",
 		action = wezterm.action.PromptInputLine({
 			description = "Tab name:",
 			action = wezterm.action_callback(function(window, _, line)
