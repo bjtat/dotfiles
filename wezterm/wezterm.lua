@@ -4,7 +4,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- Color scheme
-config.color_scheme = "catppuccin-macchiato"
+config.color_scheme = "catppuccin-frappe"
 
 -- Font
 config.font = wezterm.font("Hack Nerd Font")

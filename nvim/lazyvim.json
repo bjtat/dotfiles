@@ -1,8 +1,8 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.lang.elixir",
     "lazyvim.plugins.extras.lang.go",
-    "lazyvim.plugins.extras.lang.ruby"
+    "lazyvim.plugins.extras.lang.ruby",
+    "lazyvim.plugins.extras.lang.typescript"
   ],
   "news": {
     "NEWS.md": "10960"
