@@ -1,77 +1,78 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
-      "scrolling" : {
-        "speed" : {
-          "vertical" : 0
-        },
-        "distance" : {
-          "vertical" : 10
-        },
-        "acceleration" : {
-          "vertical" : 1
+      "if" : {
+        "device" : {
+          "productID" : "0xc548",
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver",
+          "category" : "mouse"
         }
       },
       "buttons" : {
+        "universalBackForward" : false,
         "clickDebouncing" : {
           "timeout" : 0
-        },
-        "universalBackForward" : false
-      },
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "productName" : "USB Receiver",
-          "productID" : "0xc548",
-          "vendorID" : "0x46d"
         }
       },
       "pointer" : {
-        "acceleration" : 1,
+        "speed" : 1,
         "disableAcceleration" : true,
-        "speed" : 1
-      }
-    },
-    {
-      "pointer" : {
-        "acceleration" : 1
-      },
-      "if" : {
-        "device" : {
-          "vendorID" : "0x46d",
-          "productName" : "USB Receiver",
-          "productID" : "0xc548",
-          "category" : "mouse"
-        },
-        "app" : "com.google.Chrome"
-      }
-    },
-    {
-      "pointer" : {
-        "acceleration" : 1.2,
-        "disableAcceleration" : true
-      },
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "productID" : "0xd031",
-          "vendorID" : "0x3434",
-          "productName" : "Keychron Link "
-        }
+        "acceleration" : 1.5
       },
       "scrolling" : {
         "distance" : {
           "vertical" : "128px"
         },
-        "reverse" : {
-          "vertical" : false
-        },
         "acceleration" : {
           "vertical" : 1
         },
         "speed" : {
           "vertical" : 0
         }
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.google.Chrome",
+        "device" : {
+          "productID" : "0xc548",
+          "category" : "mouse",
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "Keychron Link ",
+          "vendorID" : "0x3434",
+          "category" : "mouse",
+          "productID" : "0xd031"
+        }
+      },
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 0
+        },
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "distance" : {
+          "vertical" : "128px"
+        },
+        "reverse" : {
+          "vertical" : false
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1.2,
+        "disableAcceleration" : true
       }
     },
     {
@@ -82,13 +83,38 @@
       },
       "if" : {
         "device" : {
-          "category" : "trackpad",
           "productID" : "0x0",
+          "category" : "trackpad",
           "productName" : "Apple Internal Keyboard \/ Trackpad",
           "vendorID" : "0x0"
         }
       }
+    },
+    {
+      "pointer" : {
+        "disableAcceleration" : true,
+        "acceleration" : 1.5
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "serialNumber" : "0AD07FBF",
+          "vendorID" : "0x46d",
+          "productName" : "LIFT B",
+          "productID" : "0xb033"
+        }
+      },
+      "scrolling" : {
+        "distance" : {
+          "vertical" : "128px"
+        },
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }
