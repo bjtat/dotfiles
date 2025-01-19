@@ -8,8 +8,8 @@
 // from the command palette or from `Zed` application menu.
 {
   "theme": "Catppuccin Macchiato",
-  "ui_font_size": 18,
-  "buffer_font_size": 18,
+  "ui_font_size": 22,
+  "buffer_font_size": 22,
   "vim_mode": true,
   "vim": {
     // "always": use system clipboard
@@ -21,7 +21,7 @@
     // disable cursor blink
     "cursor_blink": false,
     // use relative line numbers
-    "relative_line_numbers": true,
+    "relative_line_numbers": false,
     // hide the scroll bar
     "scrollbar": { "show": "never" },
     // allow cursor to reach edges of screen
@@ -31,20 +31,31 @@
       "line_numbers": false
     }
   },
+  "languages": {
+    "Ruby": {
+      "language_servers": ["solargraph", "rubocop", "!ruby-lsp"],
+      "format_on_save": "on"
+    },
+    "Markdown": {
+      "format_on_save": "on"
+    }
+  },
   "lsp": {
-    "$LANGUAGE_SERVER_NAME": {
+    "solargraph": {
+      "settings": {
+        "use_bundler": false
+      },
       "initialization_options": {
-        "hints": {
-          "hints": {
-            "assignVariableTypes": true,
-            "compositeLiteralFields": true,
-            "compositeLiteralTypes": true,
-            "constantValues": true,
-            "functionTypeParameters": true,
-            "parameterNames": true,
-            "rangeVariableTypes": true
-          }
-        }
+        "diagnostics": true,
+        "formatting": true
+      }
+    },
+    "rubocop": {
+      "settings": {
+        "use_bundler": false
+      },
+      "initialization_options": {
+        "safeAutocorrect": false
       }
     }
   }

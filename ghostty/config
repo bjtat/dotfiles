@@ -1,3 +1,4 @@
 theme = catppuccin-frappe
 font-family = Hack Nerd Font
 font-size = 22
+minimum-contrast = 1.16
