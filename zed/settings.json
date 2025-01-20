@@ -8,8 +8,17 @@
 // from the command palette or from `Zed` application menu.
 {
   "theme": "Catppuccin Macchiato",
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
   "ui_font_size": 22,
   "buffer_font_size": 22,
+  "buffer_line_height": "standard",
   "vim_mode": true,
   "vim": {
     // "always": use system clipboard
