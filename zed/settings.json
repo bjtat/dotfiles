@@ -12,6 +12,10 @@
     "show": true,
     "show_nav_history_buttons": false
   },
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "ruby": true
+  },
   "tabs": {
     "file_icons": true,
     "git_status": true
