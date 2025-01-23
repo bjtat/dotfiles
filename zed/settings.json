@@ -20,6 +20,8 @@
     "file_icons": true,
     "git_status": true
   },
+  "buffer_font_family": "Hack Nerd Font",
+  "ui_font_family": "Hack Nerd Font",
   "ui_font_size": 22,
   "buffer_font_size": 22,
   "buffer_line_height": "standard",
