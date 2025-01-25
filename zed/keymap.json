@@ -35,19 +35,18 @@
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      "space": null,
-      "space o": "tab_switcher::Toggle",
-      "space space": "command_palette::Toggle",
-      "space f": "file_finder::Toggle",
-      "space t": "workspace::NewCenterTerminal",
       "space /": "workspace::NewSearch",
-      "space shift-d": "diagnostics::Deploy",
-      "space d d": "diagnostics::Deploy",
-      "space d w": "diagnostics::ToggleWarnings",
-      "space d o": "editor::GoToDiagnostic",
       "space d n": "editor::GoToPrevDiagnostic",
+      "space d o": "editor::GoToDiagnostic",
+      "space d w": "diagnostics::ToggleWarnings",
+      "space s f": "file_finder::Toggle",
+      "space s t": "tab_switcher::Toggle",
+      "space q": "pane::CloseActiveItem",
       "space s": "outline::Toggle",
-      "space shift-s": "project_symbols::Toggle"
+      "space shift-d": "diagnostics::Deploy",
+      "space shift-s": "project_symbols::Toggle",
+      "space space": "command_palette::Toggle",
+      "space": null
     }
   }
 ]
