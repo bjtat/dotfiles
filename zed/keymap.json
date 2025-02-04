@@ -1,8 +1,24 @@
 [
   {
-    "context": "VimControl && !menu",
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && VimControl && !menu",
     "bindings": {
       // Put key bindings here if you want them to work in normal & visual mode.
+      "space /": "workspace::NewSearch",
+      "space d n": "editor::GoToPrevDiagnostic",
+      "space d o": "editor::GoToDiagnostic",
+      "space d w": "diagnostics::ToggleWarnings",
+      "space s f": "file_finder::Toggle",
+      "space s t": "tab_switcher::Toggle",
+      "space q": "pane::CloseActiveItem",
+      "space e": "workspace::ToggleLeftDock",
+      "space shift-s": "project_symbols::Toggle",
+      "space space": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock"
     }
   },
   {
@@ -22,6 +38,7 @@
     "context": "vim_mode == insert",
     "bindings": {
       // "j k": "vim::NormalBefore" // In insert mode, make jk escape to normal mode.
+      "space": null
     }
   },
   {
@@ -29,24 +46,7 @@
     "bindings": {
       // Put key bindings here (in addition to the context above) if you want them to
       // work when no editor exists.
-      // "space f": "file_finder::Toggle"
-    }
-  },
-  {
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
-    "bindings": {
-      "space /": "workspace::NewSearch",
-      "space d n": "editor::GoToPrevDiagnostic",
-      "space d o": "editor::GoToDiagnostic",
-      "space d w": "diagnostics::ToggleWarnings",
-      "space s f": "file_finder::Toggle",
-      "space s t": "tab_switcher::Toggle",
-      "space q": "pane::CloseActiveItem",
-      "space s": "outline::Toggle",
-      "space shift-d": "diagnostics::Deploy",
-      "space shift-s": "project_symbols::Toggle",
-      "space space": "command_palette::Toggle",
-      "space": null
+      "space s f": "file_finder::Toggle"
     }
   }
 ]
