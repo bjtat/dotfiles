@@ -10,7 +10,7 @@
   "features": {
     "inline_completion_provider": "none"
   },
-  "theme": "Catppuccin Macchiato",
+  "theme": "Catppuccin Frappé",
   "tab_bar": {
     "show": true,
     "show_nav_history_buttons": false

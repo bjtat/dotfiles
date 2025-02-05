@@ -4,14 +4,14 @@
 
 ```
 brew install font-hack-nerd-font
-brew install --cask wezterm
+brew install --cask ghostty
+brew install starship
 brew install neovim
 brew install ripgrep
-brew install jesseduffield/lazygit/lazygit
 brew install eza
 brew install zoxide
 brew install fzf
-brew install starship
+brew install jesseduffield/lazygit/lazygit
 ```
 
 ## TODOs
