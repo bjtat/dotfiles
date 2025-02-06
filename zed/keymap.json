@@ -1,7 +1,7 @@
 [
   {
     // TODO: might be a simpler context to put this in
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && VimControl && !menu",
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && VimControl",
     "bindings": {
       // Put key bindings here if you want them to work in normal & visual mode.
       "space /": "workspace::NewSearch",
@@ -11,13 +11,22 @@
       "space s f": "file_finder::Toggle",
       "space s t": "tab_switcher::Toggle",
       "space q": "pane::CloseActiveItem",
-      "space e": "workspace::ToggleLeftDock",
+      "space e": "project_panel::ToggleFocus",
+      "space shift-e": "pane::RevealInProjectPanel",
       "space shift-s": "project_symbols::Toggle",
-      "space space": "command_palette::Toggle"
+      "space space": "command_palette::Toggle",
+      "ctrl-/": "workspace::ToggleBottomDock"
     }
   },
   {
-    "context": "Workspace",
+    "context": "Terminal",
+    "bindings": {
+      // make it so I can close out the file tree with the same keymap
+      "ctrl-/": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "ProjectPanel",
     "bindings": {
       // make it so I can close out the file tree with the same keymap
       "space e": "workspace::ToggleLeftDock"
@@ -42,9 +51,6 @@
     "bindings": {
       // Put key bindings here (in addition to the context above) if you want them to
       // work when no editor exists.
-      "space e": "workspace::ToggleLeftDock",
-      "space s f": "file_finder::Toggle",
-      "space space": "command_palette::Toggle"
     }
   }
 ]
