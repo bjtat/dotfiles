@@ -1,34 +1,52 @@
 [
   {
-    // TODO: might be a simpler context to put this in
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && VimControl",
+    "context": "(vim_mode == normal || vim_mode == visual) && Editor && VimControl && !VimWaiting",
     "bindings": {
-      // Put key bindings here if you want them to work in normal & visual mode.
-      "space /": "workspace::NewSearch",
+      // "space /": "workspace::NewSearch",
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "shift-k": "editor::Hover",
+      "space b": "editor::ToggleGitBlame",
       "space d n": "editor::GoToPrevDiagnostic",
       "space d o": "editor::GoToDiagnostic",
       "space d w": "diagnostics::ToggleWarnings",
+      "space e": "workspace::ToggleLeftDock",
+      "space q": "pane::CloseActiveItem",
       "space s f": "file_finder::Toggle",
       "space s t": "tab_switcher::Toggle",
-      "space q": "pane::CloseActiveItem",
-      "space e": "project_panel::ToggleFocus",
       "space shift-e": "pane::RevealInProjectPanel",
       "space shift-s": "project_symbols::Toggle",
       "space space": "command_palette::Toggle",
-      "ctrl-/": "workspace::ToggleBottomDock"
+      "space t": "workspace::ToggleBottomDock"
+      // "space t": "workspace::NewCenterTerminal"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      // make it so I can close out the file tree with the same keymap
-      "ctrl-/": "workspace::ToggleBottomDock"
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "escape escape": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Dock || Terminal || Editor",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
     }
   },
   {
     "context": "ProjectPanel",
     "bindings": {
-      // make it so I can close out the file tree with the same keymap
+      "escape escape": "workspace::ToggleLeftDock",
       "space e": "workspace::ToggleLeftDock"
     }
   },
@@ -47,10 +65,24 @@
     }
   },
   {
-    "context": "EmptyPane || SharedScreen",
+    "context": "TabSwitcher",
     "bindings": {
-      // Put key bindings here (in addition to the context above) if you want them to
-      // work when no editor exists.
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrev"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrev"
+    }
+  },
+  {
+    "context": "CommandPalette",
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrev"
     }
   }
 ]

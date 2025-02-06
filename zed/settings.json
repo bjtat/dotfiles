@@ -7,15 +7,40 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "buffer_font_family": "Hack Nerd Font",
+  "buffer_font_size": 22,
+  "buffer_line_height": "standard",
+  "cursor_blink": false,
+  "relative_line_numbers": false,
+  "show_inline_completions": false,
+  "theme": "Catppuccin Frappé",
+  "ui_font_family": "Hack Nerd Font",
+  "ui_font_size": 22,
+  "vertical_scroll_margin": 0,
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always",
+    "use_multiline_find": true
+  },
   "features": {
     "inline_completion_provider": "none"
   },
-  "theme": "Catppuccin Frappé",
   "tab_bar": {
     "show": true,
-    "show_nav_history_buttons": false
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
-  "show_inline_completions": false,
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "scrollbar": {
+    "show": "never"
+  },
   "git": {
     "inline_blame": {
       "enabled": false
@@ -24,37 +49,6 @@
   "auto_install_extensions": {
     "catppuccin": true,
     "ruby": true
-  },
-  "tabs": {
-    "file_icons": true,
-    "git_status": true
-  },
-  "cursor_blink": false,
-  "buffer_font_family": "Hack Nerd Font",
-  "ui_font_family": "Hack Nerd Font",
-  "ui_font_size": 22,
-  "buffer_font_size": 22,
-  "buffer_line_height": "standard",
-  "vim_mode": true,
-  "vim": {
-    // "always": use system clipboard
-    // "never": don't use system clipboard
-    // "on_yank": use system clipboard for yank operations
-    "use_system_clipboard": "always",
-    // Lets `f` and `t` motions extend across multiple lines
-    "use_multiline_find": true,
-    // disable cursor blink
-    "cursor_blink": false,
-    // use relative line numbers
-    "relative_line_numbers": false,
-    // hide the scroll bar
-    "scrollbar": { "show": "never" },
-    // allow cursor to reach edges of screen
-    "vertical_scroll_margin": 0,
-    "gutter": {
-      // disable line numbers completely:
-      "line_numbers": true
-    }
   },
   "languages": {
     "Ruby": {
