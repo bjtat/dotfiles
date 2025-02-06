@@ -16,14 +16,11 @@
   "theme": "Catppuccin Frappé",
   "ui_font_family": "Hack Nerd Font",
   "ui_font_size": 22,
-  "vertical_scroll_margin": 0,
+  "vertical_scroll_margin": 10,
   "vim_mode": true,
   "vim": {
     "use_system_clipboard": "always",
     "use_multiline_find": true
-  },
-  "features": {
-    "inline_completion_provider": "none"
   },
   "tab_bar": {
     "show": true,
@@ -31,7 +28,7 @@
     "show_tab_bar_buttons": false
   },
   "tabs": {
-    "file_icons": true,
+    "file_icons": false,
     "git_status": true
   },
   "toolbar": {
