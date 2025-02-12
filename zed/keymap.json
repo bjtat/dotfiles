@@ -12,10 +12,10 @@
       "space e": "workspace::ToggleLeftDock",
       "space q": "pane::CloseActiveItem",
       "space s f": "file_finder::Toggle",
+      "space s k": "command_palette::Toggle",
       "space s t": "tab_switcher::Toggle",
       "space shift-e": "pane::RevealInProjectPanel",
       "space shift-s": "project_symbols::Toggle",
-      "space space": "command_palette::Toggle",
       "space t": "workspace::ToggleBottomDock"
       // "space t": "workspace::NewCenterTerminal"
     }
