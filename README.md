@@ -14,6 +14,12 @@ brew install fzf
 brew install jesseduffield/lazygit/lazygit
 ```
 
+## Set up soft links
+
+```
+ln -s .config/.ideavimrc .ideavimrc
+```
+
 ## TODOs
 
 - Make a script to set this up from a fresh start

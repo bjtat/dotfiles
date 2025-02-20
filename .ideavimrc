@@ -1,18 +1,19 @@
-"" .ideavimrc
+" .ideavimrc
 " Based off of: https://www.cyberwizard.io/posts/the-ultimate-ideavim-setup/
 " Enable IdeaVim plugins https://jb.gg/ideavim-plugins
-"Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+" Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 
 " Base Settings
-"" ========================================================
+" ========================================================
 
 let mapleader = " "
 
 set scrolloff=8
 set linenumber
-set relativenumber
-set showmode
+"set relativenumber
 set showcmd
+set showmode
+set ideajoin
 
 set smartcase
 set incsearch
@@ -25,8 +26,8 @@ set noerrorbells
 " Use system clipboard
 set clipboard+=unnamed
 
-"" Plugin Settings
-"" ========================================================
+" Plugin Settings
+" ========================================================
 
 set surround
 set highlightedyank
@@ -47,8 +48,8 @@ let g:WhichKey_SortOrder = "by_key_prefix_first"
 let g:WhichKeyDesc_leader = "<leader> Leader key"
 let g:WhichKeyDesc_easymotion_prefix = "<leader><leader> Easymotion"
 
-"" Key mappings
-"" ========================================================
+" Key mappings
+" ========================================================
 
 " Clear highlighting
 map <esc><esc> :noh<CR><esc>
@@ -112,7 +113,7 @@ let g:WhichKeyDesc_goto_forward = "gf Go Forward"
 map <leader>e :NERDTreeToggle<CR>
 
 " Jump around with easymotion
-map <leader>/ <Plug>(easymotion-s)
+map s <Plug>(easymotion-s)
 
 " Comment lines
 map <leader>c <action>(CommentByLineComment)
@@ -141,7 +142,7 @@ let g:WhichKeyDesc_fold = "<leader>z Folding"
 let g:WhichKeyDesc_fold_all = "<leader>zc Fold all regions"
 let g:WhichKeyDesc_unfold_all = "<leader>zo Unfold all regions"
 
- Window splits
+" Window splits
 map <leader>wv <Action>(SplitVertically)
 map <leader>ws <Action>(SplitHorizontally)
 map <leader>wu <Action>(Unsplit)
@@ -152,16 +153,6 @@ let g:WhichKeyDesc_window_split_vertically = "<leader>wv Split vertically"
 let g:WhichKeyDesc_window_split_horizontally = "<leader>ws Split horizontally"
 let g:WhichKeyDesc_window_split_unsplit = "<leader>wu Unsplit"
 let g:WhichKeyDesc_window_split_move_editor = "<leader>wm Move editor to opposite tab group"
-
-" Display options
-map <leader>dd <action>(ToggleDistractionFreeMode)
-map <leader>dz <action>(ToggleZenMode)
-map <leader>df <action>(ToggleFullScreen)
-
-let g:WhichKeyDesc_display = "<leader>d Display options"
-let g:WhichKeyDesc_zen_mode = "<leader>dz Toggle Zen mode"
-let g:WhichKeyDesc_df_mode = "<leader>dd Toggle Distraction-Free mode"
-let g:WhichKeyDesc_fullscreen = "<leader>df Toggle full screen"
 
 " Refactoring
 map <leader>rn <Action>(RenameElement)
@@ -180,31 +171,21 @@ let g:WhichKeyDesc_refactoring_signature = "<leader>rs Change signature"
 let g:WhichKeyDesc_refactoring_all = "<leader>rr Open refactorings list"
 
 " Search
-map <leader>sa <action>(GotoAction)
+map <leader>sk <action>(GotoAction)
 map <leader>sc <action>(GotoClass)
 map <leader>sf <action>(GotoFile)
 map <leader>sl <action>(RecentLocations)
 map <leader>sr <action>(RecentFiles)
 map <leader>ss <action>(GotoSymbol)
-map <leader>st <Action>(FindInPath)
+map <leader>sg <Action>(FindInPath)
 map <leader>su <Action>(FindUsages)
 
 let g:WhichKeyDesc_search_nav = "<leader>s Search"
-let g:WhichKeyDesc_search_nav_actions = "<leader>sa Search actions"
+let g:WhichKeyDesc_search_nav_actions = "<leader>sk Search actions"
 let g:WhichKeyDesc_search_nav_classes = "<leader>sc Search classes"
 let g:WhichKeyDesc_search_nav_files = "<leader>sf Search files"
 let g:WhichKeyDesc_search_nav_recent_file = "<leader>sr Search recent files"
 let g:WhichKeyDesc_search_nav_recent_locations = "<leader>sl Search recent locations"
 let g:WhichKeyDesc_search_nav_symbols = "<leader>ss Search symbols"
 let g:WhichKeyDesc_search_nav_usages = "<leader>su Search Usages"
-let g:WhichKeyDesc_search_nav_text = "<leader>st Search text"
-
-" Git windows
-map <leader>gc <Action>(CheckinProject)
-map <leader>gs <Action>(ActivateVersionControlToolWindow)
-map <leader>gb <Action>(Git.Branches)
-
-let g:WhichKeyDesc_git = "<leader>g Git operations"
-let g:WhichKeyDesc_git_commit = "<leader>gc Git commit dialog"
-let g:WhichKeyDesc_git_status = "<leader>gs Git status dialog"
-let g:WhichKeyDesc_git_branches = "<leader>gb Git branches list"
+let g:WhichKeyDesc_search_nav_text = "<leader>sg search text"
