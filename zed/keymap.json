@@ -1,8 +1,9 @@
+// https://stevedylan.dev/posts/leaving-neovim-for-zed/
+// borrowed stuff from this link
 [
   {
     "context": "(vim_mode == normal || vim_mode == visual) && Editor && VimControl && !VimWaiting",
     "bindings": {
-      // "space /": "workspace::NewSearch",
       "ctrl-/": "workspace::ToggleBottomDock",
       "shift-k": "editor::Hover",
       "space b": "editor::ToggleGitBlame",
@@ -11,13 +12,17 @@
       "space d w": "diagnostics::ToggleWarnings",
       "space e": "workspace::ToggleLeftDock",
       "space q": "pane::CloseActiveItem",
+      "space s g": "workspace::NewSearch",
       "space s f": "file_finder::Toggle",
       "space s k": "command_palette::Toggle",
       "space s t": "tab_switcher::Toggle",
+      "space s r": "tab_switcher::Toggle",
       "space shift-e": "pane::RevealInProjectPanel",
       "space shift-s": "project_symbols::Toggle",
-      "space t": "workspace::ToggleBottomDock"
-      // "space t": "workspace::NewCenterTerminal"
+      "space t": "workspace::ToggleBottomDock",
+      "space c": "vim::ToggleComments",
+      "g b": "pane::GoBack",
+      "g f": "pane::GoForward"
     }
   },
   {
@@ -37,10 +42,10 @@
   {
     "context": "Dock || Terminal || Editor",
     "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
     }
   },
   {
