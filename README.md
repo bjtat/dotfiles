@@ -17,7 +17,8 @@ brew install jesseduffield/lazygit/lazygit
 ## Set up soft links
 
 ```
-ln -s .config/.ideavimrc .ideavimrc
+ln -s ~/.config/.ideavimrc ~/.ideavimrc
+ln -s ~/.config/bjtat.zsh ~/bjtat.zsh
 ```
 
 ## TODOs
