@@ -89,5 +89,13 @@
       "ctrl-j": "menu::SelectNext",
       "ctrl-k": "menu::SelectPrev"
     }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space s g": "workspace::NewSearch",
+      "space s f": "file_finder::Toggle",
+      "space s k": "command_palette::Toggle"
+    }
   }
 ]

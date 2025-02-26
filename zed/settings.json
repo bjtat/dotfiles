@@ -60,6 +60,9 @@
       }
     },
     "ruby-lsp": {
+      "settings": {
+        "use_bundler": false
+      },
       "initialization_options": {
         "enabledFeatures": {
           "diagnostics": false
