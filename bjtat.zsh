@@ -13,5 +13,5 @@ eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 source <(fzf --zsh)
 
-
 alias lg="lazygit"
+alias yz="yazi"

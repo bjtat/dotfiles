@@ -5,12 +5,8 @@
 ```
 brew install font-hack-nerd-font
 brew install --cask ghostty
-brew install starship
-brew install neovim
-brew install ripgrep
-brew install eza
-brew install zoxide
-brew install fzf
+brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick
+brew install neovim starship eza
 brew install jesseduffield/lazygit/lazygit
 ```
 
@@ -24,5 +20,4 @@ ln -s ~/.config/bjtat.zsh ~/bjtat.zsh
 ## TODOs
 
 - Make a script to set this up from a fresh start
-- Add some way to manage changes in .zshrc along with filepath
-- Look into dotfile manager?
+
