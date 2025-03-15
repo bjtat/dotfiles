@@ -10,7 +10,7 @@ let mapleader = " "
 
 set scrolloff=8
 set linenumber
-"set relativenumber
+set relativenumber
 set showcmd
 set showmode
 set ideajoin
@@ -161,6 +161,7 @@ map <leader>rv <Action>(IntroduceVariable)
 map <leader>rf <Action>(IntroduceField)
 map <leader>rs <Action>(ChangeSignature)
 map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+map <leader>rg <Action>(ReplaceInPath)
 
 let g:WhichKeyDesc_refactoring = "<leader>r Refactoring menu"
 let g:WhichKeyDesc_refactoring_rename = "<leader>rn Rename element"
