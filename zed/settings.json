@@ -80,7 +80,7 @@
     },
     "clangd": {
       "binary": {
-        "path": "/usr/bin/clangd",
+        "path": "/opt/homebrew/Cellar/llvm/19.1.7_1/bin/clangd",
         "arguments": []
       }
     }
