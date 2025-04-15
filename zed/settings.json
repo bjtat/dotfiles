@@ -46,6 +46,9 @@
     "ruby": true
   },
   "languages": {
+    "Markdown": {
+      "format_on_save": "on"
+    },
     "Ruby": {
       "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
     },

@@ -6,8 +6,8 @@
     "bindings": {
       "ctrl-/": "workspace::ToggleBottomDock",
       "shift-k": "editor::Hover",
-      "space b": "editor::ToggleGitBlame",
-      "space d n": "editor::GoToPrevDiagnostic",
+      "space b": "git::Blame",
+      "space d n": "editor::GoToPreviousDiagnostic",
       "space d o": "editor::GoToDiagnostic",
       "space d w": "diagnostics::ToggleWarnings",
       "space e": "workspace::ToggleLeftDock",
@@ -17,6 +17,7 @@
       "space s k": "command_palette::Toggle",
       "space s t": "tab_switcher::Toggle",
       "space s r": "tab_switcher::Toggle",
+      "space r n": "editor::Rename",
       "space shift-e": "pane::RevealInProjectPanel",
       "space shift-s": "project_symbols::Toggle",
       "space t": "workspace::ToggleBottomDock",
@@ -58,7 +59,7 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "shift-h": "pane::ActivatePrevItem",
+      "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem"
     }
   },
@@ -73,21 +74,21 @@
     "context": "TabSwitcher",
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrev"
+      "ctrl-k": "menu::SelectPrevious"
     }
   },
   {
     "context": "FileFinder",
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrev"
+      "ctrl-k": "menu::SelectPrevious"
     }
   },
   {
     "context": "CommandPalette",
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrev"
+      "ctrl-k": "menu::SelectPrevious"
     }
   },
   {
