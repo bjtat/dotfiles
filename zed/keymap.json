@@ -23,7 +23,8 @@
       "space t": "workspace::ToggleBottomDock",
       "space c": "vim::ToggleComments",
       "g b": "pane::GoBack",
-      "g f": "pane::GoForward"
+      "g f": "pane::GoForward",
+      "g I": "editor::GoToImplementation"
     }
   },
   {
