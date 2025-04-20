@@ -5,3 +5,6 @@ maximize = true
 quit-after-last-window-closed = true
 wait-after-command = true
 
+# hack to make it start maximized
+window-width=3000
+window-height=2000
