@@ -97,6 +97,7 @@
     "bindings": {
       "space s g": "workspace::NewSearch",
       "space s f": "file_finder::Toggle",
+      "space space": "file_finder::Toggle",
       "space s k": "command_palette::Toggle"
     }
   }

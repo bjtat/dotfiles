@@ -46,11 +46,8 @@
     "ruby": true
   },
   "languages": {
-    "Markdown": {
-      "format_on_save": "on"
-    },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
+      "language_servers": ["ruby-lsp", "rubocop"]
     },
     "C++": {
       "format_on_save": "on",
@@ -63,22 +60,25 @@
     }
   },
   "lsp": {
-    "rubocop": {
-      "settings": {
-        "use_bundler": false
-      },
-      "initialization_options": {
-        "safeAutocorrect": false
-      }
-    },
+    // https://andywaite.com/2025/03/31/setting-up-zed-with-ruby-lsp.html
+    // `gem install ruby-lsp` per project to ensure the version is correct for each project
     "ruby-lsp": {
       "settings": {
         "use_bundler": false
       },
       "initialization_options": {
         "enabledFeatures": {
+          "onTypeFormatting": false,
           "diagnostics": false
         }
+      }
+    },
+    "rubocop": {
+      "settings": {
+        "use_bundler": true
+      },
+      "initialization_options": {
+        "safeAutocorrect": false
       }
     },
     "clangd": {
