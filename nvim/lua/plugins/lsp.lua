@@ -1,6 +1,13 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
+    -- using clangd for C++ so toolchain is getting confused
+    -- added this to fix it, which is recommended fix from `:h rustaceanvim.mason`
+    setup = {
+      rust_analyzer = function()
+        return true
+      end,
+    },
     servers = {
       ruby_lsp = {
         mason = false,
