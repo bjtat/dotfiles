@@ -1,0 +1,3 @@
+[submodule "bjtat-nvim"]
+	path = bjtat-nvim
+	url = git@github.com:bjtat/kickstart.nvim.git
