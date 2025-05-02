@@ -8,6 +8,14 @@ return {
         return true
       end,
     },
+    -- diagnostics = {
+    --   virtual_text = false,
+    --   underline = false,
+    --   signs = false,
+    -- },
+    -- inlay_hints = {
+    --   enabled = false,
+    -- },
     servers = {
       ruby_lsp = {
         mason = false,

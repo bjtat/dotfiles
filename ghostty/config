@@ -5,6 +5,9 @@ maximize = true
 quit-after-last-window-closed = true
 wait-after-command = true
 
+unfocused-split-opacity = 1
+
+
 # hack to make it start maximized
 window-width=3000
 window-height=2000

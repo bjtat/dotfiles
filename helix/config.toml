@@ -1,6 +1,7 @@
 theme = "catppuccin_frappe"
 
 [editor]
+evil = true              # Default; set this to `false` to disable evil-helix behavioreditor]
 line-number = "relative"
 cursorline = true
 color-modes = true
