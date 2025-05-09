@@ -20,7 +20,7 @@
       "space r n": "editor::Rename",
       "space shift-e": "pane::RevealInProjectPanel",
       "space shift-s": "project_symbols::Toggle",
-      // "space t": "workspace::ToggleBottomDock",
+      "space t": "workspace::ToggleBottomDock",
       "space c": "vim::ToggleComments",
       "g b": "pane::GoBack",
       "g f": "pane::GoForward",

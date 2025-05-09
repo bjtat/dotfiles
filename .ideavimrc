@@ -165,3 +165,17 @@ let g:WhichKeyDesc_search_nav_recent_locations = "<leader>sl Search recent locat
 let g:WhichKeyDesc_search_nav_symbols = "<leader>ss Search symbols"
 let g:WhichKeyDesc_search_nav_usages = "<leader>su Search Usages"
 let g:WhichKeyDesc_search_nav_text = "<leader>sg search text"
+
+" Testing
+map <leader>tt <Action>(RunClass)
+map <leader>tc <Action>(ContextRun)
+map <leader>tf <Action>(RerunFailedTests)
+map <leader>tr <Action>(Rerun)
+map <leader>to <Action>(ActivateRunToolWindow)
+
+let g:WhichKeyDesc_test_nav = "<leader>t Test"
+let g:WhichKeyDesc_test_nav_all= "<leader>tt Test all"
+let g:WhichKeyDesc_test_nav_class = "<leader>tc Test class"
+let g:WhichKeyDesc_test_nav_failed = "<leader>tf Test failed"
+let g:WhichKeyDesc_test_nav_rerun = "<leader>tr Test rerun"
+let g:WhichKeyDesc_test_nav_output = "<leader>to Test output"
