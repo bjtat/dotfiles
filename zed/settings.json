@@ -57,6 +57,9 @@
       // this one shows extra info on right when doing comps
       "show_completion_documentation": false,
       "formatter": "language_server"
+    },
+    "Rust": {
+      "show_completions_on_input": false
     }
   },
   "lsp": {

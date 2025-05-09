@@ -27,13 +27,13 @@
       "g I": "editor::GoToImplementation"
     }
   },
-  // {
-  //   "context": "Terminal",
-  //   "bindings": {
-  //     "ctrl-/": "workspace::ToggleBottomDock",
-  //     "escape escape": "workspace::ToggleBottomDock"
-  //   }
-  // },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "escape escape": "workspace::ToggleBottomDock"
+    }
+  },
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
