@@ -59,7 +59,7 @@
       "formatter": "language_server"
     },
     "Rust": {
-      "show_completions_on_input": false
+      "show_completions_on_input": true
     }
   },
   "lsp": {

@@ -5,6 +5,7 @@
     "context": "(vim_mode == normal || vim_mode == visual) && Editor && VimControl && !VimWaiting",
     "bindings": {
       // "ctrl-/": "workspace::ToggleBottomDock",
+      "shift shift": "command_palette::Toggle",
       "shift-k": "editor::Hover",
       "space b": "git::Blame",
       "space d n": "editor::GoToPreviousDiagnostic",

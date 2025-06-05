@@ -7,7 +7,7 @@ HISTFILE=~/.zsh_history
 # neovim > vim
 export EDITOR='nvim'
 alias e=$EDITOR
-alias bvim="NVIM_APPNAME=bjtat-nvim nvim"
+alias b="NVIM_APPNAME=bjtat-nvim nvim"
 
 # spinning up starship, zoxide, and fzf on shell start
 eval "$(starship init zsh)"

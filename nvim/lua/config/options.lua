@@ -7,3 +7,5 @@ vim.g.snacks_animate = false
 
 vim.g.lazyvim_ruby_lsp = "ruby_lsp"
 vim.g.lazyvim_ruby_formatter = "rubocop"
+
+vim.g.lazyvim_mini_snippets_in_completion = false
