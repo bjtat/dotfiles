@@ -1,13 +1,19 @@
 theme = catppuccin-mocha
+
 font-family = Hack Nerd Font
 font-size = 22
+font-thicken = true
+font-thicken-strength = 85
+
+macos-non-native-fullscreen = true
+macos-titlebar-style = tabs
+unfocused-split-opacity = 1
+
 maximize = true
+window-width=3000
+window-height=2000
+window-save-state = never
+
 quit-after-last-window-closed = true
 wait-after-command = true
 
-unfocused-split-opacity = 1
-
-
-# hack to make it start maximized
-window-width=3000
-window-height=2000
