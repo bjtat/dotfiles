@@ -52,7 +52,8 @@ let g:WhichKeyDesc_easymotion_prefix = "<leader><leader> Easymotion"
 " ========================================================
 
 " Clear highlighting
-map <esc><esc> :noh<CR><esc>
+nnoremap <esc> :noh<CR><esc>
+nnoremap <leader>n :noh<CR>
 
 " Tab navigation
 nnoremap H :tabprev<CR>

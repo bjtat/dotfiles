@@ -14,7 +14,6 @@
   "vim": {
     "highlight_on_yank_duration": 50,
     "use_system_clipboard": "always",
-    "use_multiline_find": true,
     "use_smartcase_find": true
   },
   "features": {
@@ -47,7 +46,10 @@
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop"]
+      // currently, ruby-lsp is broken so I turned it off
+      // "language_servers": ["ruby-lsp", "rubocop"],
+      "language_servers": ["rubocop"],
+      "format_on_save": "on"
     },
     "C++": {
       "format_on_save": "on",
