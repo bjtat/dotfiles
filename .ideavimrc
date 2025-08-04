@@ -10,7 +10,7 @@ let mapleader = " "
 
 set scrolloff=8
 set linenumber
-set relativenumber
+" set relativenumber
 set showcmd
 set showmode
 set ideajoin

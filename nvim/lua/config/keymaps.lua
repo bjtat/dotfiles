@@ -3,9 +3,7 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>sf", LazyVim.pick("files"), { desc = "Search files" })
-vim.keymap.set("n", "<leader>q", function()
-  Snacks.bufdelete()
-end, { desc = "Close buffer" })
+vim.keymap.set("n", "<leader>q", "<cmd>:bd<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>sr", function()
   Snacks.picker.recent({ filter = { cwd = true } })
 end, { desc = "Search recent files" })

@@ -17,3 +17,4 @@ window-save-state = never
 quit-after-last-window-closed = true
 wait-after-command = true
 
+cursor-invert-fg-bg = true
