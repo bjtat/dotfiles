@@ -1,47 +1,61 @@
-// https://stevedylan.dev/posts/leaving-neovim-for-zed/
-// borrowed stuff from this link
+// Zed Editor Keymap Configuration
+// Based on: https://stevedylan.dev/posts/leaving-neovim-for-zed/
+
 [
+  // ===== VIM MODE: NORMAL & VISUAL =====
   {
-    "context": "(vim_mode == normal || vim_mode == visual) && Editor && VimControl && !VimWaiting",
+    "context": "(vim_mode == normal || vim_mode == visual) && !VimWaiting",
     "bindings": {
+      // Toggle tabs
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+
+      // Toggle panels
       "ctrl-/": "workspace::ToggleBottomDock",
-      "shift shift": "command_palette::Toggle",
-      "shift-k": "editor::Hover",
-      "space b": "git::Blame",
-      "space d n": "editor::GoToPreviousDiagnostic",
-      "space d o": "editor::GoToDiagnostic",
-      "space d w": "diagnostics::ToggleWarnings",
       "space e": "workspace::ToggleLeftDock",
+      "space t": "workspace::ToggleBottomDock",
+
+      // File operations
       "space q": "pane::CloseActiveItem",
+      "space shift-e": "pane::RevealInProjectPanel",
+
+      // Search operations
       "space s g": "workspace::NewSearch",
       "space s f": "file_finder::Toggle",
       "space s k": "command_palette::Toggle",
       "space s t": "tab_switcher::Toggle",
-      "space s r": "tab_switcher::Toggle",
-      "space r n": "editor::Rename",
-      "space shift-e": "pane::RevealInProjectPanel",
       "space shift-s": "project_symbols::Toggle",
-      "space t": "workspace::ToggleBottomDock",
-      "space c": "vim::ToggleComments",
+
+      // Code operations
+      "gc": "vim::ToggleComments",
+      "space c f": "editor::Rename",
+      "space c d": "editor::GoToDiagnostic",
+      "shift-k": "editor::Hover",
+
+      // Git operations
+      "space b": "git::Blame",
+
+      // Diagnostics
+      "[ d": "editor::GoToPreviousDiagnostic",
+      "] d": "editor::GoToDiagnostic",
+
+      // Navigation
       "g b": "pane::GoBack",
       "g f": "pane::GoForward",
       "g I": "editor::GoToImplementation"
     }
   },
+
+  // ===== VIM MODE: INSERT =====
   {
-    "context": "Terminal",
+    "context": "vim_mode == insert",
     "bindings": {
-      "ctrl-/": "workspace::ToggleBottomDock",
-      "escape escape": "workspace::ToggleBottomDock"
+      // Disable space as leader key in insert mode to allow normal typing
+      "space": null
     }
   },
-  {
-    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
-    "bindings": {
-      "shift-j": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp"
-    }
-  },
+
+  // ===== PANE NAVIGATION =====
   {
     "context": "Dock || Terminal || Editor",
     "bindings": {
@@ -51,27 +65,26 @@
       "ctrl-l": "workspace::ActivatePaneRight"
     }
   },
+
+  // ===== PROJECT PANEL =====
   {
     "context": "ProjectPanel",
     "bindings": {
-      "escape escape": "workspace::ToggleLeftDock",
+      "escape": "workspace::ToggleLeftDock",
       "space e": "workspace::ToggleLeftDock"
     }
   },
+
+  // ===== TERMINAL PANEL =====
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Terminal",
     "bindings": {
-      "shift-h": "pane::ActivatePreviousItem",
-      "shift-l": "pane::ActivateNextItem"
+      "escape": "workspace::ToggleBottomDock",
+      "ctrl-/": "workspace::ToggleBottomDock"
     }
   },
-  {
-    "context": "vim_mode == insert",
-    "bindings": {
-      // I null out space in insert mode or else I can't type due to using it as a leader key in other spots
-      "space": null
-    }
-  },
+
+  // ===== MENU NAVIGATION =====
   {
     "context": "TabSwitcher",
     "bindings": {
@@ -93,9 +106,12 @@
       "ctrl-k": "menu::SelectPrevious"
     }
   },
+
+  // ===== EMPTY PANE & SHARED SCREEN =====
   {
     "context": "EmptyPane || SharedScreen",
     "bindings": {
+      "space e": "workspace::ToggleLeftDock",
       "space s g": "workspace::NewSearch",
       "space s f": "file_finder::Toggle",
       "space space": "file_finder::Toggle",

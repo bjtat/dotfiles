@@ -1,9 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
-    inlay_hints = {
-      enabled = false,
-    },
     -- using clangd for C++ so toolchain is getting confused
     -- added this to fix it, which is recommended fix from `:h rustaceanvim.mason`
     setup = {
@@ -11,14 +8,14 @@ return {
         return true
       end,
     },
-    -- diagnostics = {
-    --   virtual_text = false,
-    --   underline = false,
-    --   signs = false,
-    -- },
-    -- inlay_hints = {
-    --   enabled = false,
-    -- },
+    diagnostics = {
+      virtual_text = false,
+      underline = true,
+      signs = true,
+    },
+    inlay_hints = {
+      enabled = false,
+    },
     servers = {
       ruby_lsp = {
         mason = false,
